@@ -46,7 +46,7 @@ RUN ln -sf /usr/share/zoneinfo/EST5EDT /etc/localtime && \
 EXPOSE 5984
 
 # Expose our data, logs and configuration volumes
-VOLUME ["/data", "/usr/local/var/log/couchdb", "/usr/local/etc/couchdb"]
+VOLUME ["/data", "/usr/local/var/log/couchdb", "/usr/local/etc/couchdb", "/etc"]
 
 CMD ["/usr/local/bin/couchdb"]
 
